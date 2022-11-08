@@ -1,0 +1,56 @@
+for文の繰り返し処理
+for 変数名　in オブジェクト:
+    ‘処理’
+インデントは半角スペース４つ分空ける
+
+names = ['太郎','次郎','三郎']
+for name in names:
+    print (name)
+
+while文の繰り返し処理
+
+while  条件式 :
+    ‘処理’
+
+i = 0
+
+while i < 3:
+    print(i)
+    i += 1
+
+出力結果
+0
+1
+2
+
+if文の条件処理
+
+if  [条件式1] :
+    [条件式がtrueの時に行う処理]
+elif [条件式2] :
+    [elifの条件式がtrueの時に行う処理]
+else:
+    [ifの条件式1もelifの条件式2もどちらもfalseの時に行う処理]
+
+def if_test(num):
+  if num > 100:
+    print('100より大きい')
+  elif num > 50:
+    print('100未満50より大きい')
+  elif num > 0:
+    print('50未満0より大きい')
+  elif num == 0:
+    print('0と等しい')
+  else:
+    print('0より小さい')
+
+if_test(2000)
+if_test(75)
+if_test(0)
+if_test(-100)
+
+出力結果
+100より大きい
+100未満50より大きい
+0と等しい
+0より小さい
